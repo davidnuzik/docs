@@ -92,7 +92,7 @@ Command | Description
 The `k3s server` and `k3s agent` commands have additional configuration options that can be viewed with <span class='nowrap'>`k3s server --help`</span> or <span class='nowrap'>`k3s agent --help`</span>. For convenience, that help text is presented here:
 
 # Registration Options for the K3s Server
-```
+```sh
 NAME:
    k3s server - Run management server
 
@@ -160,7 +160,7 @@ OPTIONS:
 ```
 
 # Registration Options for the K3s Agent
-```
+```sh
 NAME:
    k3s agent - Run node agent
 
@@ -201,7 +201,7 @@ OPTIONS:
 K3s agents can be configured with the options `--node-label` and `--node-taint` which adds a label and taint to the kubelet. The two options only add labels and/or taints at registration time, so they can only be added once and not changed after that again by running K3s commands.
 
 Below is an example showing how to add labels and a taint:
-```
+```sh
      --node-label foo=bar \
      --node-label hello=world \
      --node-taint key1=value1:NoExecute
